@@ -1,0 +1,20 @@
+<KJSPMW_Orarend>
+    <ora id = "1" tipus = "elmelet">
+        <szak>
+            <kurzusnev>
+            </kurzusnev>
+            <idopont>
+                <nap>
+                </nap>
+                <kezdet>
+                </kezdet>
+                <vége>
+                </vége>
+            </idopont>
+            <helyszin>
+            </helyszin>
+            <oktato>
+            </oktato>
+        </szak>
+    </ora>
+</KJSPMW_Orarend>

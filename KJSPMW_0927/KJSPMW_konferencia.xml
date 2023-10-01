@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+    <cim> Az adatkezelés fontossága XML szempontjából </cim>
+    <hallgatók>
+        <hallgató>
+            <név> Vicc Elek </név>
+            <lakcím> Vicces utca 26. </lakcím>
+        </hallgató> 
+        <hallgató>
+            <név> Kukor Ica </név>
+            <lakcím> Szántóföld u. 12. </lakcím>
+        </hallgató>
+        <hallgató>
+            <név> Alkohol Ida </név>
+            <lakcím> Virág u. 31. </lakcím>
+        </hallgató>
+    </hallgatók>
+    <helyszín>
+        Miskolc, Egyetemváros
+    </helyszín>
+    <előadó>
+        <név> ELektrom Ágnes </név>
+        <adószám> 42386486 </adószám>
+        <lakcím> Habtorta u. 23. </lakcím>
+    </előadó>
+    <dátum> 1947. 05. 04.</dátum>
+</konferencia>
