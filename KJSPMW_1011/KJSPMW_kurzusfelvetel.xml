@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KJSPMW_kurzusfelvetel xlmns:xs ="http://www.w3.org/2001/XMLSchema-istance" xs:noNamespaceSchemaLocation="KJSPMW_kurzusfelvetel.xsd" tanev = "2023/24 I." egyetem ="Miskolci Egyetem">
+    <hallgato>
+        <hkurzusnev>Karczub Roland</hkurzusnev>
+        <szulev>2002</szulev>
+        <szak evf ="III.">Programtervező informatikus</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id ="GEIAL331-B" jovahagyas="Igen">
+            <kurzusnev>Web technológiák 1</kurzusnev>
+            <kredit>5</kredit>
+            <hely>313</hely>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+        <kurzus id ="GEMAK234-B" jovahagyas="Igen">
+            <kurzusnev>Algoritmusok és vizsgálatuk</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <oktato>Dr. Házy Attila</oktato>
+        </kurzus>
+        <kurzus id ="GEIAK130-B" jovahagyas="Igen">
+            <kurzusnev>Mesterséges intelligencia alapok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <oktato>Fazekas Levente</oktato>
+        </kurzus>
+        <kurzus id ="GEIAL315-B" jovahagyas="Igen">
+            <kurzusnev>Vállalati információs rendszerek fejlesztése</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf.101</hely>
+            <oktato>Dr. Sasvári Péter</oktato>
+        </kurzus>
+        <kurzus id ="GEMAKVRP2-B2" jovahagyas="Igen">
+            <kurzusnev>Versenyrobotok programozása 2</kurzusnev>
+            <kredit>3</kredit>
+            <hely>Tréning Stúdió</hely>
+            <oktato>Lengyelné Szilágyi Szilvia</oktato>
+        </kurzus>
+        <kurzus id ="GEIAL332-B" jovahagyas="Igen">
+            <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf.101</hely>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+    </kurzusok>
+</KJSPMW_kurzusfelvetel>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs ="http://www.w3.org/2001/XMLSchema" elementFormDefault ="qualified">
+    <!-- egyszerű típusok, kigyűjtése hivatkozás céljából-->
+    <xs:element nev="nev" type="xs:string" />
+    <xs:element nev="baratja" type="xs:string" />
+    <xs:element nev="szuletett" type="xs:string" />
+    <xs:element nev="jellemzes" type="xs:string" />
+    <xs:element nev="cim" type="xs:string" />
+    <xs:element nev="szerzo" type="xs:string" />
+    <xs:element nev="isbn" type="xs:string" />
+<!--komplex típusok-->
+<xs:element nev="konyvek">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element nev="konyv" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="cim" minOccurs="0" maxOccurs="1"/>
+                        <xs:element ref="szerzo"/>
+                        <xs:element nev="szereplo" minOccurs="0" maxOccurs="5">
+                            <xs:complexType>
+                                <xs:sequence>
+                                <!--egyszerű típusokra a ref atributomon keresztül hivatkozunk-->
+                                    <xs:element ref="nev" />
+                                    <xs:element ref="baratja" minOccurs="0" maxOccurs="5"/>
+                                    <xs:element ref="szuletett" />
+                                    <xs:element ref="jellemzes" />
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute ref="isbn" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
