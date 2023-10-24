@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema" >
-<xs:element name="KJSPMW_kurzusfelvetel" tanev ="2023/24 I." egyetem ="Miskolci Egyetem" >
-    <xs:complexType>
-        <xs:sequence>
-            <xs:element name="hallgato" minOccurs="0">
-                <xs:complexType>
-                    <xs:sequence>
-                    
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://www.example.com/KJSPMW_kurzusfelvetel"
+            xmlns="http://www.example.com/KJSPMW_kurzusfelvetel"
+            elementFormDefault="qualified">
+
+  <xsd:element name="KJSPMW_kurzusfelvetel">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="hallgato" type="xsd:complexType">
+          <xsd:sequence>
+            <xsd:element name="hkurzusnev" type="xsd:string"/>
+            <xsd:element name="szulev" type="xsd:integer"/>
+            <xsd:element name="szak" type="xsd:string">
+              <xsd:attribute name="evf" type="xsd:string"/>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:element>
+        <xsd:element name="kurzusok" type="xsd:complexType">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="kurzus" type="xsd:complexType" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="kurzusnev" type="xsd:string"/>
+                    <xsd:element name="kredit" type="xsd:integer"/>
+                    <xsd:element name="hely" type="xsd:string"/>
+                    <xsd:element name="oktato" type="xsd:string"/>
+                  </xsd:sequence>
+                  <xsd:attribute name="id" type="xsd:string"/>
+                  <xsd:attribute name="jovahagyas" type="xsd:string"/>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+      <xsd:attribute name="tanev" type="xsd:string"/>
+      <xsd:attribute name="egyetem" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>
