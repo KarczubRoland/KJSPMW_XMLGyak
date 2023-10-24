@@ -1,5 +1,5 @@
 <KJSPMW_Orarend>
-    <ora id = "1" tipus = "elmelet">
+    <ora id = "1" tipus = "gyakorlat">
         <szak>
             <kurzusnev>
             </kurzusnev>

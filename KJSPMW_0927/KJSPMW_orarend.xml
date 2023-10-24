@@ -124,7 +124,7 @@
         <oktato> Fazekas Levente Áron </oktato>
         <szak> Programtervező Informatikus </szak>
     </ora>
-    <ora id="11" tipus="gyakorlat">
+    <ora id="11" tipus="elmélet">
         <targy> Versenyrobotok építése és programozása II. </targy>
         <idopont>
             <nap> Csütörtök </nap>
