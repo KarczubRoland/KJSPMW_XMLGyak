@@ -1,4 +1,4 @@
-package hu.KJSPMW;
+package KJSPMW_1025.hu.KJSPMW;
 
 import java.io.File;
 import javax.xml.transform.Source;
