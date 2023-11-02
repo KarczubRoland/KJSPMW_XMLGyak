@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Futobolt_KJSPMW>
+
+<Futobolt_KJSPMW>
+    <rendeles id="1">
+        <datum>2021-10-01</datum>
+        <rendeles_fizetes>utánvét</rendeles_fizetes>
+        <rendeles_ar>10000</rendeles_ar>
+    </rendeles>
+    <raktar id="2">
+        <ra_darabszam>10</ra_darabszam>
+        <raktar_ar>1000</raktar_ar>
+        <raktar_tipus>új</raktar_tipus>
+    </raktar>
+    <raktar_alkalmazott id="3">
+        <elerheto>igen</elerheto>
+    </raktar_alkalmazott>
+    <alkalmazott id="4">
+        <alkalmazott_nev>Ádám</alkalmazott_nev>
+        <alkalmazott_fizetes>100000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>vezető</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2013-05-23</alkalmazott_csatlakozas>
+    </alkalmazott>
+    <termek id = "5">
+        <termek_cipo>igen</termek_cipo>
+        <termek_ruha>igen</termek_ruha>
+        <termek_kiegeszito>igen</termek_kiegeszito>
+    </termek>
+    <vevo id= "6">
+        <nev>Béla</nev>
+        <telefonszam>06301234567</telefonszam>
+        <cim>
+            <iranyitoszam>1106</iranyitoszam>
+            <telepules>Budapest</telepules>
+            <utca>Árpád út</utca>
+            <hazszam>14</hazszam>
+        </cim>
+        <email>kedvesbela@gmail.com</email>
+        <szemelyigazolvany_szam>123456789</szemelyigazolvany_szam>
+    </vevo>
+
+</Futobolt_KJSPMW>
