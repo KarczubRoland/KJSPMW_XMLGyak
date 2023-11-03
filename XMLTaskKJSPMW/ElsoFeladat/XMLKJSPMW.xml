@@ -1,35 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<Futobolt_KJSPMW xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaKJSPMW.xsd">
 
-<!DOCTYPE Futobolt_KJSPMW>
-
-<Futobolt_KJSPMW>
-    <rendeles id="1">
+    <!-- Rendelések példányosítása-->
+    <rendeles rendeles_id="1">
         <datum>2021-10-01</datum>
         <rendeles_fizetes>utánvét</rendeles_fizetes>
-        <rendeles_ar>10000</rendeles_ar>
+        <rendeles_ar>12900</rendeles_ar>
     </rendeles>
-    <raktar id="2">
+    <rendeles rendeles_id="2">
+        <datum>2020-12-24</datum>
+        <rendeles_fizetes>kártya</rendeles_fizetes>
+        <rendeles_ar>45230</rendeles_ar>
+    </rendeles>
+    <rendeles rendeles_id="3">
+        <datum>2023-08-07</datum>
+        <rendeles_fizetes>utánvét</rendeles_fizetes>
+        <rendeles_ar>6700</rendeles_ar>
+    </rendeles>
+    <!-- Raktárak példányosítása-->
+    <raktar raktar_id="11" rendeles_id="1">
         <ra_darabszam>10</ra_darabszam>
         <raktar_ar>1000</raktar_ar>
         <raktar_tipus>új</raktar_tipus>
     </raktar>
-    <raktar_alkalmazott id="3">
+    <raktar raktar_id="12" rendeles_id="2">
+        <ra_darabszam>10</ra_darabszam>
+        <raktar_ar>1000</raktar_ar>
+        <raktar_tipus>új</raktar_tipus>
+    </raktar>
+    <raktar raktar_id="13" rendeles_id="3">
+        <ra_darabszam>10</ra_darabszam>
+        <raktar_ar>1000</raktar_ar>
+        <raktar_tipus>új</raktar_tipus>
+    </raktar>
+    <!-- Raktár alkalmazott kapcsoló tábla példányosítása-->
+    <raktar_alkalmazott raktar_id="11" alkalmazott_id = "41">
         <elerheto>igen</elerheto>
     </raktar_alkalmazott>
-    <alkalmazott id="4">
+    <raktar_alkalmazott raktar_id="12" alkalmazott_id = "42">
+        <elerheto>igen</elerheto>
+    </raktar_alkalmazott>
+    <raktar_alkalmazott raktar_id="13" alkalmazott_id = "43">
+        <elerheto>igen</elerheto>
+    </raktar_alkalmazott>
+    <!-- Alkalmazottak példányosítása-->
+    <alkalmazott alkalmazott_id = "41">
         <alkalmazott_nev>Ádám</alkalmazott_nev>
-        <alkalmazott_fizetes>100000</alkalmazott_fizetes>
-        <alkalmazott_beosztas>vezető</alkalmazott_beosztas>
-        <alkalmazott_csatlakozas>2013-05-23</alkalmazott_csatlakozas>
+        <alkalmazott_fizetes>1000000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>segédmunkás</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2010-02-01</alkalmazott_csatlakozas>
     </alkalmazott>
-    <termek id = "5">
-        <termek_cipo>igen</termek_cipo>
-        <termek_ruha>igen</termek_ruha>
-        <termek_kiegeszito>igen</termek_kiegeszito>
+    <alkalmazott alkalmazott_id = "42">
+        <alkalmazott_nev>Béla</alkalmazott_nev>
+        <alkalmazott_fizetes>500000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>vezető</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2018-01-23</alkalmazott_csatlakozas>
+    </alkalmazott>
+    <alkalmazott alkalmazott_id = "43">
+        <alkalmazott_nev>Dani</alkalmazott_nev>
+        <alkalmazott_fizetes>245000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>igazgató</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2011-06-12</alkalmazott_csatlakozas>
+    </alkalmazott>
+    <!-- Termékek példányosítása-->
+    <termek termek_id = "51" rendeles_id = "1">
+        <termek_cipo>félcipő</termek_cipo>
+        <termek_ruha>póló</termek_ruha>
+        <termek_kiegeszito>pulzuspánt</termek_kiegeszito>
     </termek>
-    <vevo id= "6">
-        <nev>Béla</nev>
-        <telefonszam>06301234567</telefonszam>
+    <termek termek_id = "52" rendeles_id = "2">
+        <termek_cipo>bakancs</termek_cipo>
+        <termek_ruha>kabát</termek_ruha>
+        <termek_kiegeszito>óra</termek_kiegeszito>
+    </termek>
+    <termek termek_id = "53" rendeles_id = "3">
+        <termek_cipo>csizma</termek_cipo>
+        <termek_ruha>szoknya</termek_ruha>
+        <termek_kiegeszito>karkötő</termek_kiegeszito>
+    </termek>
+    <!-- Termék árak példányosítása-->
+    <vevo id= "101" rendeles_id = "1">
+        <nev>Lajos</nev>
+        <telefonszam>06304567656</telefonszam>
         <cim>
             <iranyitoszam>1106</iranyitoszam>
             <telepules>Budapest</telepules>
@@ -37,7 +89,31 @@
             <hazszam>14</hazszam>
         </cim>
         <email>kedvesbela@gmail.com</email>
-        <szemelyigazolvany_szam>123456789</szemelyigazolvany_szam>
+        <szemelyigazolvany_szam>12345678</szemelyigazolvany_szam>
     </vevo>
-
+    <vevo id= "102" rendeles_id = "2">
+        <nev>Józsi</nev>
+        <telefonszam>06301234567</telefonszam>
+        <cim>
+            <iranyitoszam>3900</iranyitoszam>
+            <telepules>Szerencs</telepules>
+            <utca>Magyar utca</utca>
+            <hazszam>21</hazszam>
+        </cim>
+        <email>nagyjozsi@gmail.com</email>
+        <szemelyigazolvany_szam>38264823</szemelyigazolvany_szam>
+    </vevo>
+    <vevo id= "103" rendeles_id = "3">
+        <nev>Attila</nev>
+        <telefonszam>06308766623</telefonszam>
+        <cim>
+            <iranyitoszam>3905</iranyitoszam>
+            <telepules>Monok</telepules>
+            <utca>Szabadság utca</utca>
+            <hazszam>03</hazszam>
+        </cim>
+        <email>bereczkattila@gmail.com</email>
+        <szemelyigazolvany_szam>32468734</szemelyigazolvany_szam>
+    </vevo>
 </Futobolt_KJSPMW>
+```
