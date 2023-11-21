@@ -1,7 +1,8 @@
 <xml version = "1.0" encoding = "UTF-8">
 <xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema" elementFormDefault = "qualified">
 
-<!--Saját típusok meghatározása, egyszerű típusok kigyűjtése, megszorítás-->
+<!--Egyszerű típusok kigyűjtése-->
+
 <xs:element name = "datum" type="xs:date"/>
 <xs:element name = "fizetes" type="xs:string"/>
 <xs:element name = "ar" type="xs:integer"/>
@@ -15,15 +16,15 @@
 <xs:element name = "email" type="xs:string"/>
 <xs:element name = "telefonszam" type="TelefonszamTipus"/>
 
-<xs:simpleType name = "TelefonszamTipus">
+<xs:simpleType name = "telefonszamTipus">
     <xs:restriction base = "xs:string">
         <xs:pattern value = "[0-9]{2}-[0-9]{2}-[0-9]{2}"/>
     </xs:restriction>
 </xs:simpleType>
 
-<!--Komplex típusok meghatározása-->
+<!--Komplex típusok kigyűjtése-->
 
-<xs:complexType name = "RendelesTipus">
+<xs:complexType name = "rendelesTipus">
     <xs:sequence>
         <xs:element ref = "datum"/>
         <xs:element ref = "fizetes"/>
@@ -32,7 +33,7 @@
     <xs:attribute name = "rendeles_id" type="xs:integer" use="required"/>
 </xs:complexType>
 
-<xs:complexType name = "RaktarTipus">
+<xs:complexType name = "raktarTipus">
     <xs:sequence>
         <xs:element ref = "darabszam"/>
         <xs:element ref = "ar"/>
@@ -42,7 +43,7 @@
     <xs:attribute name = "rendeles_id" type="xs:integer" use="required"/>
 </xs:complexType>
 
-<xs:complexType name = "RaktarAlkalmazottTipus">
+<xs:complexType name = "raktarAlkalmazottTipus">
     <xs:sequence>
         <xs:element ref = "elerheto"/>
     </xs:sequence>
@@ -50,7 +51,7 @@
     <xs:attribute name = "alkalmazott_id" type="xs:integer" use="required"/>
 </xs:complexType>
 
-<xs:complexType name = "AlkalmazottTipus">
+<xs:complexType name = "alkalmazottTipus">
     <xs:sequence>
         <xs:element ref = "alkalmazott_nev"/>
         <xs:element ref = "alkalmazott_fizetes"/>
@@ -60,7 +61,7 @@
     <xs:attribute name = "alkalmazott_id" type="xs:integer" use="required"/>
 </xs:complexType>
 
-<xs:complexType name = "TermekTipus">
+<xs:complexType name = "termekTipus">
     <xs:sequence>
         <xs:element ref = "termek_tipus"/>
         <xs:element ref = "ar"/>
@@ -69,7 +70,7 @@
     <xs:attribute name = "rendeles_id" type="xs:integer" use="required"/>
 </xs:complexType>
 
-<xs:complexType name = "VevokTipus">
+<xs:complexType name = "vevokTipus">
     <xs:sequence>
         <xs:element ref = "email"/>
         <xs:element ref = "telefonszam"/>
@@ -88,9 +89,9 @@
     <xs:attribute name = "rendeles_id" type="xs:integer" use="required"/>
 </xs:complexType>
 
-<!--Gyökér elem meghatározása, kulcsok és kulcsreferenciák meghatározása--> 
+<!--Gyökér elem definiálása-->
 
-<xs:element name="Futobolt_KJSPMW">
+<xs:element name="futobolt_KJSPMW">
     <xs:complexType>
         <xs:sequence>
             <xs:element name = "rendeles" type="RendelesTipus" maxOccurs="unbounded" minOccurs="0"/>
@@ -102,70 +103,66 @@
         </xs:sequence>
     </xs:complexType>
 
-    <xs:key name = "rendeles_id">
+    <!--Elsődleges kulcsok kigyűjtése-->
+
+    <xs:key name = "rendeles_kulcs">
         <xs:selector xpath = "rendeles"/>
         <xs:field xpath = "@rendeles_id"/>
     </xs:key>
 
-    <xs:key name = "raktar_id">
+    <xs:key name = "raktar_kulcs">
         <xs:selector xpath = "raktar"/>
         <xs:field xpath = "@raktar_id"/>
     </xs:key>
 
-    <xs:key name = "alkalmazott_id">
+    <xs:key name = "alkalmazott_kulcs">
         <xs:selector xpath = "alkalmazott"/>
         <xs:field xpath = "@alkalmazott_id"/>
     </xs:key>
 
-    <xs:key name = "termek_id">
+    <xs:key name = "termek_kulcs">
         <xs:selector xpath = "termek"/>
         <xs:field xpath = "@termek_id"/>
     </xs:key>
 
-    <xs:key name = "vevo_id">
+    <xs:key name = "vevo_kulcs">
         <xs:selector xpath = "vevo"/>
         <xs:field xpath = "@vevo_id"/>
     </xs:key>
 
-    <xs:keyref name = "rendeles_id_ref" refer = "rendeles_id">
+    <!--Idegen kulcsok kigyűjtése-->
+
+    <xs:keyref name = "raktar_rendeles" refer = "rendeles_kulcs">
         <xs:selector xpath = "raktar"/>
         <xs:field xpath = "@rendeles_id"/>
     </xs:keyref>
 
-    <xs:keyref name = "rendeles_id_ref2" refer = "rendeles_id">
-        <xs:selector xpath = "raktar_alkalmazott"/>
-        <xs:field xpath = "@rendeles_id"/>
-    </xs:keyref>
-
-    <xs:keyref name = "raktar_id_ref" refer = "raktar_id">
+    <xs:keyref name = "raktar_alkalmazott_raktar" refer = "raktar_kulcs">
         <xs:selector xpath = "raktar_alkalmazott"/>
         <xs:field xpath = "@raktar_id"/>
     </xs:keyref>
 
-    <xs:keyref name = "alkalmazott_id_ref" refer = "alkalmazott_id">
+    <xs:keyref name = "raktar_alkalmazott_alkalmazott" refer = "alkalmazott_kulcs">
         <xs:selector xpath = "raktar_alkalmazott"/>
         <xs:field xpath = "@alkalmazott_id"/>
     </xs:keyref>
 
-    <xs:keyref name = "rendeles_id_ref3" refer = "rendeles_id">
+    <xs:keyref name = "termek_rendeles" refer = "rendeles_kulcs">
         <xs:selector xpath = "termek"/>
         <xs:field xpath = "@rendeles_id"/>
     </xs:keyref>
 
-    <xs:keyref name = "termek_id_ref" refer = "termek_id">
-        <xs:selector xpath = "termek"/>
-        <xs:field xpath = "@termek_id"/>
-    </xs:keyref>
-
-    <xs:keyref name = "rendeles_id_ref4" refer = "rendeles_id">
+    <xs:keyref name = "vevo_rendeles" refer = "rendeles_kulcs">
         <xs:selector xpath = "vevo"/>
         <xs:field xpath = "@rendeles_id"/>
     </xs:keyref>
 
-    <xs:keyref name = "vevo_id_ref" refer = "vevo_id">
+    <!--Egy-egy kapcsolat kigyűjtése-->
+
+    <xs:unique name = "rendeles_vevo_unique">
         <xs:selector xpath = "vevo"/>
-        <xs:field xpath = "@vevo_id"/>
-    </xs:keyref>
+        <xs:field xpath = "@rendeles_id"/>
+    </xs:unique>
 
     </xs:element>
 </xs:schema>
