@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="studentKLNSPG.xsd">
+    <student student_id="01">
+        <keresztnev>Mátyás</keresztnev>
+        <vezeteknev>Biszterszky</vezeteknev>
+        <becenev>BM</becenev>
+        <kor>21</kor>
+    </student>
+
+    <student student_id="02">
+        <keresztnev>László</keresztnev>
+        <vezeteknev>Stremler</vezeteknev>
+        <becenev>SL</becenev>
+        <kor>21</kor>
+    </student>
+
+    <student student_id="03">
+        <keresztnev>Vanda</keresztnev>
+        <vezeteknev>Holczer</vezeteknev>
+        <becenev>HV</becenev>
+        <kor>20</kor>
+    </student>
+
+     <student student_id="04">
+        <keresztnev>Máté</keresztnev>
+        <vezeteknev>Zavarkó</vezeteknev>
+        <becenev>ZM</becenev>
+        <kor>21</kor>
+    </student>
+
+    <student student_id="05">
+        <keresztnev>Roland</keresztnev>
+        <vezeteknev>Karczub</vezeteknev>
+        <becenev>KR</becenev>
+        <kor>20</kor>
+    </student>
+</class>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<KJSPMW_kurzusfelvetel xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" egyetem="ME" tanev="2023/24_I">
+        
+    <hallgato>
+                
+        <hnev>Karczub Roland</hnev>
+                
+        <szulev>2002-12-15</szulev>
+                
+        <szak evf="5">programtervező informatikus</szak>
+            
+    </hallgato>
+      
+    <kurzusok>
+            
+        <kurzus id="1">
+                    
+            <kurzusnev>Webtechnológiák I.</kurzusnev>
+                    
+            <kredit>5</kredit>
+                    
+            <hely>XXX. előadó</hely>
+                    
+            <idopont>Hétfő 14:00-15:30</idopont>
+                    
+            <oktato>Agárdi Anita</oktato>
+            	
+    
+        </kurzus>
+        <kurzus id="GEIAL315-B" nyelv="magyar">
+            <kurzusnev>Vállalati Információs Rendszerek Fejlesztése</kurzusnev>
+            <kredit>5</kredit>
+            <hely>In. 103</hely>
+            <idopont>Szerda 14:00-15:30</idopont>
+            <oktato>Dr. Sasvári Péter</oktato>
+        </kurzus>
+            
+        <kurzus id="GEMAK234-B">
+                    
+            <kurzusnev>Algoritmusok és Vizsgálatuk</kurzusnev>
+                    
+            <kredit>4</kredit>
+                    
+            <hely>A1. 315</hely>
+                    
+            <idopont>Szerda 14:00-17:30</idopont>
+                    
+            <oktato>Dr. Házy Attila</oktato>
+            	
+    
+        </kurzus>
+            
+        <kurzus id="GEIAL322-B">
+                    
+            <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+                    
+            <kredit>5</kredit>
+                    
+            <hely>XXXII. előadó</hely>
+                    
+            <idopont>Kedd 12:00-13:30</idopont>
+                    
+            <oktato>Dr. Bednarik László</oktato>
+            		
+    
+        </kurzus>
+            
+
+    
+        
+        <kurzus id="GEIAL130-B" jovahagyas="igen">
+                    
+            <kurzusnev>Mesterséges intelligencia alapok</kurzusnev>
+                    
+            <kredit>5</kredit>
+                    
+            <hely>XXXII.</hely>
+                    
+            <idopont>Kedd 10:00-11:30</idopont>
+                    
+            <oktato>Kunné Dr. Tamás Judit</oktato>
+            	
+            <oraado>Fazekas Levente</oraado>
+                
+        </kurzus>
+          
+        <kurzus id="NEW123">
+            <kurzusnev>Új kurzus</kurzusnev>
+            <kredit>3</kredit>
+            <hely>YYY. előadó</hely>
+            <idopont>Csütörtök 16:00-18:00</idopont>
+            <oktato>Nagy Péter</oktato>
+        </kurzus>
+    </kurzusok>
+      
+
+</KJSPMW_kurzusfelvetel>
