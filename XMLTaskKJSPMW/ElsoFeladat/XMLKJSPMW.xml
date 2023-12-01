@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Futobolt_KJSPMW xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaKJSPMW.xsd">
 
+    <!--Rendelés-->
+
     <rendeles rendeles_id="1">
         <datum>2021-10-01</datum>
         <rendeles_fizetes>utánvét</rendeles_fizetes>
@@ -14,8 +16,10 @@
     <rendeles rendeles_id="3">
         <datum>2023-08-07</datum>
         <rendeles_fizetes>utánvét</rendeles_fizetes>
-        <rendeles_ar>6700</rendeles_ar>
+        <rendeles_ar>6700</rendeles_ar> 
     </rendeles>
+
+    <!--Raktár-->
 
     <raktar raktar_id="11" rendeles_id="1">
         <ra_darabszam>10</ra_darabszam>
@@ -33,6 +37,8 @@
         <raktar_tipus>új</raktar_tipus>
     </raktar>
 
+    <!--Raktár-alkalmazott-->
+
     <raktar_alkalmazott raktar_id="11" alkalmazott_id = "41">
         <elerheto>igen</elerheto>
     </raktar_alkalmazott>
@@ -42,6 +48,8 @@
     <raktar_alkalmazott raktar_id="13" alkalmazott_id = "43">
         <elerheto>igen</elerheto>
     </raktar_alkalmazott>
+
+    <!--Alkalmazott-->
 
     <alkalmazott alkalmazott_id = "41">
         <alkalmazott_nev>Ádám</alkalmazott_nev>
@@ -62,6 +70,8 @@
         <alkalmazott_csatlakozas>2011-06-12</alkalmazott_csatlakozas>
     </alkalmazott>
 
+    <!--Termék-->
+
     <termek termek_id = "51" rendeles_id = "1">
         <termek_cipo>félcipő</termek_cipo>
         <termek_ruha>póló</termek_ruha>
@@ -77,6 +87,8 @@
         <termek_ruha>szoknya</termek_ruha>
         <termek_kiegeszito>karkötő</termek_kiegeszito>
     </termek>
+
+    <!--Vevő-->
 
     <vevo id= "101" rendeles_id = "1">
         <nev>Lajos</nev>
