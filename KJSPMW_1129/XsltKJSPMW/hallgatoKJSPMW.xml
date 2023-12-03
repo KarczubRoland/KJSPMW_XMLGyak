@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hallgatoKJSPMW.xsl"?>
+<class>
+    <student id="01">
+        <vezeteknev>Karczub</vezeteknev>
+        <keresztnev>Roland</keresztnev>
+        <becenev>Roli</becenev>
+        <kor>21</kor>
+        <osztondij>21000</osztondij>
+    </student>
+    <student id="02">
+        <vezeteknev>Buda</vezeteknev>
+        <keresztnev>Ferenc</keresztnev>
+        <becenev>Feri</becenev>
+        <kor>18</kor>
+        <osztondij>18000</osztondij>
+    </student>
+    <student id="03">
+        <vezeteknev>Szabó</vezeteknev>
+        <keresztnev>Dóra</keresztnev>
+        <becenev>Dóri</becenev>
+        <kor>19</kor>
+        <osztondij>23000</osztondij>
+    </student>
+</class>

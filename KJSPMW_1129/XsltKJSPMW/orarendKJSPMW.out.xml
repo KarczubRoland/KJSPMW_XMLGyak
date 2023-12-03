@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <body>
+        <h2>Karczub Roland Órarend – 2023/24. I. félév.</h2>
+        <table border="4">
+            <tr bgcolor="#90EE90">
+                <th>ID</th>
+                <th>Tipus</th>
+                <th>Targy</th>
+                <th colspan="2">Idopont</th>
+                <th>Helyszin</th>
+                <th>Oktato</th>
+                <th>Szak</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>elmelet</td>
+                <td> WEB-Technológiák </td>
+                <td> Hétfő </td>
+                <td> 14:00 h -   15:30 h</td>
+                <td> XXX </td>
+                <td> Agárdi Anita </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>gyakorlat</td>
+                <td> WEB-Technológiák </td>
+                <td> Hétfő </td>
+                <td> 16:00 h -   17:30 h</td>
+                <td> In/202 </td>
+                <td> Agárdi Anita </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>elmelet</td>
+                <td> Mesterséges intelligencia alapok </td>
+                <td> Kedd </td>
+                <td> 10:00 h -   11:30 h</td>
+                <td> XXXII </td>
+                <td> Fazekas Levente Áron </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>elmelet</td>
+                <td> Adatkezelés XML-ben </td>
+                <td> Kedd </td>
+                <td> 12:00 h -   13:30 h</td>
+                <td> XXXII </td>
+                <td> Dr. Bednarik László </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>elmelet</td>
+                <td> Algoritmusok és vizsgálatuk </td>
+                <td> Kedd </td>
+                <td> 14:00 h -   17:30 h</td>
+                <td> A1/320 </td>
+                <td> Dr. Házy Attila </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>gyakorlat</td>
+                <td> Adatkezelés XML-ben </td>
+                <td> Szerda </td>
+                <td> 12:00 h -   13:30 h</td>
+                <td> In/103 </td>
+                <td> Dr. Bednarik László </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>gyakorlat</td>
+                <td> Adatkezelés XML-ben </td>
+                <td> Szerda </td>
+                <td> 12:00 h -   13:30 h</td>
+                <td> In/103 </td>
+                <td> Dr. Bednarik László </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>elmélet</td>
+                <td> Vállalati információs rendszerek fejlesztése </td>
+                <td> Szerda </td>
+                <td> 14:00 h -   15:30 h</td>
+                <td> In/101 </td>
+                <td> Dr. Sasvári Péter László </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>gyakorlat</td>
+                <td> Vállalati információs rendszerek fejlesztése </td>
+                <td> Szerda </td>
+                <td> 18:00 h -   19:30 h</td>
+                <td> In/103 </td>
+                <td> Dr. Sasvári Péter László </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>gyakorlat</td>
+                <td> Mesterséges intelligencia alapok </td>
+                <td> Csütörtök </td>
+                <td> 10:00 h -   11:30 h</td>
+                <td> XXXII </td>
+                <td> Fazekas Levente Áron </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>elmélet</td>
+                <td> Versenyrobotok építése és programozása II. </td>
+                <td> Csütörtök </td>
+                <td> 14:00 h -   16:00 h</td>
+                <td> Tréning Stúdió </td>
+                <td> Lengyelné Szilágyi Szilvia </td>
+                <td> Programtervező Informatikus </td>
+            </tr>
+        </table>
+    </body>
+</html>
