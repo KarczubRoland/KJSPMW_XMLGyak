@@ -82,7 +82,7 @@ public class DomWriteKJSPMW {
                     "janoskiss@gmail.com", "12343253");
 
             // Dokumentum kiírása, mentése
-            File outputFile = new File("..\\XMLKJSPMW3.xml");
+            File outputFile = new File("..\\XMLKJSPMW4.xml");
 
             PrintWriter file = new PrintWriter(outputFile, "UTF-8");
 

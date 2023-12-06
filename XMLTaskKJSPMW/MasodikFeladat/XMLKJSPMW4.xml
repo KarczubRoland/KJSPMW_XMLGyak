@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Futobolt_KJSPMW xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaKJSPMW.xsd">
+    <rendeles rendeles_id="1">
+        <datum>2020-11-13</datum>
+        <rendeles_fizetes>Utánvét</rendeles_fizetes>
+        <rendeles_ar>11500</rendeles_ar>
+    </rendeles>
+    <rendeles rendeles_id="2">
+        <datum>2022-12-10</datum>
+        <rendeles_fizetes>Utánvét</rendeles_fizetes>
+        <rendeles_ar>5000</rendeles_ar>
+    </rendeles>
+    <rendeles rendeles_id="3">
+        <datum>2021-01-02</datum>
+        <rendeles_fizetes>Kártya</rendeles_fizetes>
+        <rendeles_ar>7810</rendeles_ar>
+    </rendeles>
+    <rendeles rendeles_id="4">
+        <datum>2021-05-09</datum>
+        <rendeles_fizetes>Utánvét</rendeles_fizetes>
+        <rendeles_ar>6788</rendeles_ar>
+    </rendeles>
+    <rendeles rendeles_id="5">
+        <datum>2023-09-10</datum>
+        <rendeles_fizetes>Kártya</rendeles_fizetes>
+        <rendeles_ar>23000</rendeles_ar>
+    </rendeles>
+    <raktar raktar_id="1" rendeles_id="1">
+        <ra_darabszam>34</ra_darabszam>
+        <raktar_ar>1500</raktar_ar>
+        <raktar_tipus>új</raktar_tipus>
+    </raktar>
+    <raktar raktar_id="1" rendeles_id="2">
+        <ra_darabszam>12</ra_darabszam>
+        <raktar_ar>500</raktar_ar>
+        <raktar_tipus>használt</raktar_tipus>
+    </raktar>
+    <raktar raktar_id="3" rendeles_id="3">
+        <ra_darabszam>45</ra_darabszam>
+        <raktar_ar>60540</raktar_ar>
+        <raktar_tipus>új</raktar_tipus>
+    </raktar>
+    <raktar raktar_id="4" rendeles_id="4">
+        <ra_darabszam>23</ra_darabszam>
+        <raktar_ar>12300</raktar_ar>
+        <raktar_tipus>régi</raktar_tipus>
+    </raktar>
+    <raktar raktar_id="5" rendeles_id="5">
+        <ra_darabszam>67</ra_darabszam>
+        <raktar_ar>21000</raktar_ar>
+        <raktar_tipus>új</raktar_tipus>
+    </raktar>
+    <raktar_alkalmazott raktar_id="1" alkalmazott_id="1">
+          <elerheto>igen</elerheto>
+    </raktar_alkalmazott>
+    <raktar_alkalmazott raktar_id="1" alkalmazott_id="2">
+          <elerheto>nem</elerheto>
+    </raktar_alkalmazott>
+    <raktar_alkalmazott raktar_id="2" alkalmazott_id="3">
+          <elerheto>igen</elerheto>
+    </raktar_alkalmazott>
+    <raktar_alkalmazott raktar_id="3" alkalmazott_id="4">
+          <elerheto>igen</elerheto>
+    </raktar_alkalmazott>
+    <raktar_alkalmazott raktar_id="3" alkalmazott_id="5">
+          <elerheto>nem</elerheto>
+    </raktar_alkalmazott>
+    <alkalmazott alkalmazott_id="1">
+        <alkalmazott_nev>Kiss József</alkalmazott_nev>
+        <alkalmazott_fizetes>350000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>vezető</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2019-01-01</alkalmazott_csatlakozas>
+    </alkalmazott>
+    <alkalmazott alkalmazott_id="2">
+        <alkalmazott_nev>Nagy Béla</alkalmazott_nev>
+        <alkalmazott_fizetes>100000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>segédmunkás</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2016-03-23</alkalmazott_csatlakozas>
+    </alkalmazott>
+    <alkalmazott alkalmazott_id="3">
+        <alkalmazott_nev>Kovács Péter</alkalmazott_nev>
+        <alkalmazott_fizetes>80000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>segédmunkás</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2013-12-11</alkalmazott_csatlakozas>
+    </alkalmazott>
+    <alkalmazott alkalmazott_id="4">
+        <alkalmazott_nev>Horváth Tibor</alkalmazott_nev>
+        <alkalmazott_fizetes>760000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>tulajdonos</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2010-05-30</alkalmazott_csatlakozas>
+    </alkalmazott>
+    <alkalmazott alkalmazott_id="5">
+        <alkalmazott_nev>Kun Erika</alkalmazott_nev>
+        <alkalmazott_fizetes>450000</alkalmazott_fizetes>
+        <alkalmazott_beosztas>adminisztrátor</alkalmazott_beosztas>
+        <alkalmazott_csatlakozas>2012-10-05</alkalmazott_csatlakozas>
+    </alkalmazott>
+    <termek termek_id="1" rendeles_id="1">
+        <termek_cipo>félcipő</termek_cipo>
+        <termek_ruha>póló</termek_ruha>
+        <termek_kiegeszito>pulzuspánt</termek_kiegeszito>
+    </termek>
+    <termek termek_id="2" rendeles_id="2">
+        <termek_cipo>cipő</termek_cipo>
+        <termek_ruha>pulóver</termek_ruha>
+        <termek_kiegeszito>sportóra</termek_kiegeszito>
+    </termek>
+    <termek termek_id="3" rendeles_id="3">
+        <termek_cipo>félcipő</termek_cipo>
+        <termek_ruha>kabát</termek_ruha>
+        <termek_kiegeszito>csősál</termek_kiegeszito>
+    </termek>
+    <termek termek_id="4" rendeles_id="4">
+        <termek_cipo>bakancs</termek_cipo>
+        <termek_ruha>nadrág</termek_ruha>
+        <termek_kiegeszito>kesztyű</termek_kiegeszito>
+    </termek>
+    <termek termek_id="1" rendeles_id="1">
+        <termek_cipo>félcipő</termek_cipo>
+        <termek_ruha>aláfelső</termek_ruha>
+        <termek_kiegeszito>compress szár</termek_kiegeszito>
+    </termek>
+    <vevo id="1" rendeles_id="1">
+        <nev>Pista</nev>
+        <telefonszam>06-30-540-3344</telefonszam>
+            <cim>
+                <iranyitoszam>1106</iranyitoszam>
+                <telepules>Budapest</telepules>
+                <utca>Kossuth Lajos utca</utca>
+                <hazszam>12</hazszam>
+            </cim>
+        <email>kedvespista@gmail.com</email>
+        <szemelyigazolvany_szam>12312445</szemelyigazolvany_szam>
+    </vevo>
+    <vevo id="2" rendeles_id="2">
+        <nev>Józsi</nev>
+        <telefonszam>06-30-567-3455</telefonszam>
+            <cim>
+                <iranyitoszam>3900</iranyitoszam>
+                <telepules>Szerencs</telepules>
+                <utca>Rózsa utca</utca>
+                <hazszam>34</hazszam>
+            </cim>
+        <email>jozsivagyok@gmail.com</email>
+        <szemelyigazolvany_szam>25468356</szemelyigazolvany_szam>
+    </vevo>
+    <vevo id="3" rendeles_id="3">
+        <nev>Attila</nev>
+        <telefonszam>06-20-345-3455</telefonszam>
+            <cim>
+                <iranyitoszam>3900</iranyitoszam>
+                <telepules>Szerencs</telepules>
+                <utca>Damjanich utca</utca>
+                <hazszam>56</hazszam>
+            </cim>
+        <email>attila112@gmail.com</email>
+        <szemelyigazolvany_szam>34957543</szemelyigazolvany_szam>
+    </vevo>
+    <vevo id="4" rendeles_id="4">
+        <nev>Péter</nev>
+        <telefonszam>06-20-324-6788</telefonszam>
+            <cim>
+                <iranyitoszam>3903</iranyitoszam>
+                <telepules>Bekecs</telepules>
+                <utca>Honvéd út</utca>
+                <hazszam>23</hazszam>
+            </cim>
+        <email>nagypeter@gmail.com</email>
+        <szemelyigazolvany_szam>23497532</szemelyigazolvany_szam>
+    </vevo>
+    <vevo id="5" rendeles_id="5">
+        <nev>János</nev>
+        <telefonszam>06-70-566-3435</telefonszam>
+            <cim>
+                <iranyitoszam>3905</iranyitoszam>
+                <telepules>Monok</telepules>
+                <utca>Szabadság utca</utca>
+                <hazszam>78</hazszam>
+            </cim>
+        <email>janoskiss@gmail.com</email>
+        <szemelyigazolvany_szam>12343253</szemelyigazolvany_szam>
+    </vevo>
+</Futobolt_KJSPMW>
