@@ -27,7 +27,7 @@ public class DomQueryKJSPMW {
             System.out.println("Összes vevő nevének lekérdezése:");
             // Összes vevő nevének lekérdezése
             NodeList vevoList = document.getElementsByTagName("vevo");
-            // Végigiterál az összes Aruhaz Node-on
+            // Végigiterál az összes Vevo Node-on
             for (int i = 0; i < vevoList.getLength(); i++) {
                 Node node = vevoList.item(i);
                 // Megnézi, hogy az elem elem típusú-e

@@ -73,7 +73,7 @@ public class DomModifyKJSPMW {
             if (node.getNodeType() == Node.ELEMENT_NODE) {
                 Element element = (Element) node;
 
-                // Lekéri a Nev node-ot
+                // Lekéri a AlkalmazottNev node-ot
                 Node alkalmazottNevNode = element.getElementsByTagName("alkalmazott_nev").item(0);
 
                 // Módosítja a node értékét
@@ -108,7 +108,7 @@ public class DomModifyKJSPMW {
             if (node.getNodeType() == Node.ELEMENT_NODE) {
                 Element element = (Element) node;
 
-                // Lekéri a Nev node-ot
+                // Lekéri a termekRuha node-ot
                 Node termekRuhaNode = element.getElementsByTagName("termek_ruha").item(0);
 
                 // Módosítja a node értékét
