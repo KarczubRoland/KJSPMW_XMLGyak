@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-    xs:noNamespaceSchemaLocation="KJSPMW_orarendXSD.xml">
-
-
 <KJSPMW_orarend>
     <ora id="1" tipus="elmelet">
         <targy> WEB-Technológiák </targy>
